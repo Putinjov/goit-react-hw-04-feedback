@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '@mui/material/Button';
 
  export class FeedbackOptions extends Component {
   render() {
@@ -7,9 +8,9 @@ import React, { Component } from 'react';
     return (
       <div>
         {options.map((option) => (
-          <button key={option} onClick={() => onLeaveFeedback(option)}>
+          <Button variant="outlined" key={option} onClick={() => onLeaveFeedback(option)}>
             {option}
-          </button>
+          </Button>
         ))}
       </div>
     );
